@@ -252,6 +252,18 @@ a:focus {
     line-height: 50px;
 }
 
+.slide q i.moi {
+    font-weight: bold;
+    font-size: 50px;
+    color: #BBB;
+}
+
+.slide q i.impress {
+    color: #DDD;
+    text-align: right;
+    font-weight: bold;
+}
+
 .slide q strong {
     white-space: nowrap;
 }
@@ -296,16 +308,11 @@ a:focus {
 
 #title h1 {
     font-size: 190px;
-    
     -webkit-transform: translateZ(50px);
     -moz-transform:    translateZ(50px);
     -ms-transform:     translateZ(50px);
     -o-transform:      translateZ(50px);
     transform:         translateZ(50px);
-}
-
-#title .footnote {
-    font-size: 32px;
 }
 
 /*
@@ -328,6 +335,12 @@ a:focus {
     font-family: "Courier New";
     text-shadow: 5px 5px 2px #999999;
     filter: dropshadow(color=#999999, offx=5, offy=5);
+    -webkit-transform: rotate(8deg);
+    -moz-transform:    rotate(8deg);
+    -ms-transform:     rotate(8deg);
+    -o-transform:      rotate(8deg);
+    transform:         rotate(8deg);
+
 }
 
 #big .tiny {
@@ -397,10 +410,17 @@ a:focus {
     transition-delay:         3s;
 }
 
+#tiny3 ul li {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 0.9;
+    font-size: 90px;
+    font-weight: bold;
+}
+
 /*
     This step has some animated text ...
 */
-#ing { width: 500px }
+#ing { width: 800px }
 
 #ing h1 {
     font-size: 100px;
@@ -461,18 +481,23 @@ a:focus {
 /*
     ... 'rotating' to rotate quater of a second later ...
 */
-#ing.present .rotating {
-    -webkit-transform: rotate(-10deg);
-    -moz-transform:    rotate(-10deg);
-    -ms-transform:     rotate(-10deg);
-    -o-transform:      rotate(-10deg);
-    transform:         rotate(-10deg);
 
-    -webkit-transition-delay: 0.25s;
-    -moz-transition-delay:    0.25s;
-    -ms-transition-delay:     0.25s;
-    -o-transition-delay:      0.25s;
-    transition-delay:         0.25s;
+#imagination .rotating {
+    font-size: 100px;
+}
+
+#imagination.present .rotating {
+    -webkit-transform: rotate(90deg);
+    -moz-transform:    rotate(90deg);
+    -ms-transform:     rotate(90deg);
+    -o-transform:      rotate(90deg);
+    transform:         rotate(90deg);
+
+    -webkit-transition-delay: 2s;
+    -moz-transition-delay:    2s;
+    -ms-transition-delay:     2s;
+    -o-transition-delay:      2s;
+    transition-delay:         2s;
 }
 
 /*
