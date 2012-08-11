@@ -294,10 +294,10 @@ a:focus {
 }
 
 #title .try {
-    font-size: 64px;
+    font-size: 60px;
     position: absolute;
-    top: -0.5em;
-    left: 1.5em;
+    top: -0.7em;
+    color: #666;
     
     -webkit-transform: translateZ(20px);
     -moz-transform:    translateZ(20px);
@@ -308,11 +308,22 @@ a:focus {
 
 #title h1 {
     font-size: 190px;
+    line-height: 1em;
+
     -webkit-transform: translateZ(50px);
     -moz-transform:    translateZ(50px);
     -ms-transform:     translateZ(50px);
     -o-transform:      translateZ(50px);
     transform:         translateZ(50px);
+}
+
+#title .duction {
+    font-size: 80px;
+    font-weight: bold;
+    font-family: "Georgia";
+    color: #666;
+    top: 1.8em;
+    position: absolute;
 }
 
 /*
