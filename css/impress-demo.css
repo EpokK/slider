@@ -187,7 +187,7 @@ a:focus {
 */
 .impress-enabled .step {
     margin: 0;
-    opacity: 0.3;
+    opacity: 0.1;
 
     -webkit-transition: opacity 1s;
     -moz-transition:    opacity 1s;
@@ -323,8 +323,15 @@ a:focus {
 
 #big b {
     display: block;
-    font-size: 250px;
-    line-height: 250px;
+    font-size: 100px;
+    line-height: 150px;
+    font-family: "Courier New";
+    text-shadow: 5px 5px 2px #999999;
+    filter: dropshadow(color=#999999, offx=5, offy=5);
+}
+
+#big .tiny {
+    font-size: 35px;
 }
 
 #big .thoughts {
@@ -337,7 +344,57 @@ a:focus {
 */
 #tiny {
     width: 500px;
-    text-align: center;
+}
+
+#tiny2 span.scaling1, #tiny2 span.scaling2, #tiny2 span.scaling3 {
+    display: block;
+    -webkit-transition: 0.5s;
+    -moz-transition:    0.5s;
+    -ms-transition:     0.5s;
+    -o-transition:      0.5s;
+    transition:         0.5s;
+}
+
+#tiny2.present span.scaling1 {
+    -webkit-transform: scale(0.7);
+    -moz-transform:    scale(0.7);
+    -ms-transform:     scale(0.7);
+    -o-transform:      scale(0.7);
+    transform:         scale(0.7);
+
+    -webkit-transition-delay: 1s;
+    -moz-transition-delay:    1s;
+    -ms-transition-delay:     1s;
+    -o-transition-delay:      1s;
+    transition-delay:         1s;
+}
+
+#tiny2.present span.scaling2 {
+    -webkit-transform: scale(0.7);
+    -moz-transform:    scale(0.7);
+    -ms-transform:     scale(0.7);
+    -o-transform:      scale(0.7);
+    transform:         scale(0.7);
+
+    -webkit-transition-delay: 2s;
+    -moz-transition-delay:    2s;
+    -ms-transition-delay:     2s;
+    -o-transition-delay:      2s;
+    transition-delay:         2s;
+}
+
+#tiny2.present span.scaling3 {
+    -webkit-transform: scale(0.7);
+    -moz-transform:    scale(0.7);
+    -ms-transform:     scale(0.7);
+    -o-transform:      scale(0.7);
+    transform:         scale(0.7);
+
+    -webkit-transition-delay: 3s;
+    -moz-transition-delay:    3s;
+    -ms-transition-delay:     3s;
+    -o-transition-delay:      3s;
+    transition-delay:         3s;
 }
 
 /*
@@ -345,11 +402,14 @@ a:focus {
 */
 #ing { width: 500px }
 
+#ing h1 {
+    font-size: 100px;
+}
 /*
     ... so we define display to `inline-block` to enable transforms and
     transition duration to 0.5s ...
 */
-#ing b {
+#ing b, #imagination b {
     display: inline-block;
     -webkit-transition: 0.5s;
     -moz-transition:    0.5s;
@@ -368,6 +428,34 @@ a:focus {
     -ms-transform:     translateY(-10px);
     -o-transform:      translateY(-10px);
     transform:         translateY(-10px);
+}
+
+#imagination.present .positioning1 {
+    -webkit-transform: translateY(-10px);
+    -moz-transform:    translateY(-10px);
+    -ms-transform:     translateY(-10px);
+    -o-transform:      translateY(-10px);
+    transform:         translateY(-10px);
+
+    -webkit-transition-delay: 0.25s;
+    -moz-transition-delay:    0.25s;
+    -ms-transition-delay:     0.25s;
+    -o-transition-delay:      0.25s;
+    transition-delay:         0.25s;
+}
+
+#imagination.present .positioning2 {
+    -webkit-transform: translateY(10px);
+    -moz-transform:    translateY(10px);
+    -ms-transform:     translateY(10px);
+    -o-transform:      translateY(10px);
+    transform:         translateY(10px);
+
+    -webkit-transition-delay: 0.5s;
+    -moz-transition-delay:    0.5s;
+    -ms-transition-delay:     0.5s;
+    -o-transition-delay:      0.5s;
+    transition-delay:         0.5s;
 }
 
 /*
