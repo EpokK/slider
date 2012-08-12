@@ -245,22 +245,6 @@ a:focus {
     color: #02538A;
 }
 
-.slide.present q span.gui {
-    font-size: 150px;
-    font-family: "Georgia";
-    color: #CCC;
-    position: absolute;
-    top: 400px;
-
-    -webkit-transition: 1s;
-    -moz-transition:    1s;
-    -ms-transition:     1s;
-    -o-transition:      1s;
-    transition:         1s;
-
-    
-}
-
 .slide q i {
     font-size: 25px;
     font-style: italic;
@@ -280,6 +264,12 @@ a:focus {
     font-weight: bold;
 }
 
+.slide q hr {
+    border-style: dotted;
+    border-width: 10px;
+    color: #CCC;
+}
+
 .slide q strong {
     white-space: nowrap;
 }
@@ -291,7 +281,10 @@ a:focus {
 
 .slide q ol {
     list-style: decimal;
-    margin-left: 50px;
+    margin-left: 100px;
+    font-size: 100px;
+    line-height: 110px;
+    font-family: "Arial";
 }
 
 /*
@@ -340,6 +333,24 @@ a:focus {
     color: #666;
     top: 1.8em;
     position: absolute;
+}
+
+#rappel h1 {
+    font-size: 80px;
+    font-weight: bold;
+    color: #666;
+    text-shadow: 2px 1px 1px #FFF;
+    filter: dropshadow(color=#FFF, offx=1, offy=1);
+}
+
+#rappel div.fond {
+    background: url('../img/fond.jpg') repeat center center;
+    border-color: red;
+    border-radius: 15px;
+    padding: 45px;
+    border-width: 5px;
+    border-style: dotted;
+    width: 800px;
 }
 
 /*
@@ -439,8 +450,8 @@ a:focus {
 
 #tiny3 ul li {
     font-family: 'Open Sans', sans-serif;
-    line-height: 0.9;
-    font-size: 90px;
+    line-height: 0.8;
+    font-size: 110px;
     font-weight: bold;
 }
 
