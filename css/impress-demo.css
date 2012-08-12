@@ -245,6 +245,22 @@ a:focus {
     color: #02538A;
 }
 
+.slide.present q span.gui {
+    font-size: 150px;
+    font-family: "Georgia";
+    color: #CCC;
+    position: absolute;
+    top: 400px;
+
+    -webkit-transition: 1s;
+    -moz-transition:    1s;
+    -ms-transition:     1s;
+    -o-transition:      1s;
+    transition:         1s;
+
+    
+}
+
 .slide q i {
     font-size: 25px;
     font-style: italic;
