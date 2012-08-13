@@ -301,6 +301,12 @@ a:focus {
     font-family: "Arial";
 }
 
+.slide img.univ {
+    position: absolute;
+    top: 350px;
+    opacity: 0.2;
+}
+
 #start {
     height: auto;
     background-color: black;
