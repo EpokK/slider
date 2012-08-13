@@ -273,12 +273,12 @@ a:focus {
     opacity: 0.2;
 }
 
-#start {
+#bored {
     height: auto;
     background-color: black;
 }
 
-#start img {
+#bored img {
     width: 100%;
 }
 
