@@ -301,16 +301,14 @@ a:focus {
     font-family: "Arial";
 }
 
-/*
-    And now we start to style each step separately.
+#start {
+    height: auto;
+    background-color: black;
+}
 
-    I agree that this may be not the most efficient, object-oriented and
-    scalable way of styling, but most of steps have quite a custom look
-    and typography tricks here and there, so they had to be styles separately.
-
-    First is the title step with a big <h1> (no room for padding) and some
-    3D positioning along Z axis.
-*/
+#start img {
+    width: 100%;
+}
 
 #title {
     padding: 0;
@@ -615,6 +613,7 @@ a:focus {
 #source p.note {
     font-size: .5em;
     color: #666;
+    text-align: right;
 }
 
 #source q {
