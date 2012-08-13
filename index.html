@@ -4,17 +4,16 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=1024" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <title>Infomaniak Richard</title>
-    
+    <title>Infomaniak Richard Alternance</title>
+
     <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
     <meta name="author" content="Bartek Szopka" />
 
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
 
     <link href="css/impress-demo.css" rel="stylesheet" />
-    
-    <link rel="shortcut icon" href="favicon.png" />
-    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+
+    <link rel="Shortcut Icon" type="image/gif" href="img/fav.gif">
 </head>
 
 <body class="impress-not-supported">
@@ -30,7 +29,7 @@
             <i class="moi">Richard Tetaz</i>
             <center>
                 <h1>Infomaniak Network</h1>
-                <i>Soutenance d'alternance</i> 
+                <i>Soutenance d'alternance</i>
                 <i>Master 2eme année</i>
                 <i>Télécommunication &amp; Réseaux</i>
                 <i>Université de Savoie</i>
@@ -46,7 +45,7 @@
             <ul>
                 <li>Jeune et Genevoise</li>
                 <li>Hébergement de services Web</li>
-                <li>Engagé écologiquement</li>
+                <li>Engagé <span style="color: #090;font-weight: bold;font-family: 'ProximaNova', 'Helvetica Neue', helvetica, arial, sans-serif;">écologiquement</span></li>
             </ul>
             <center>
                 <img src="img/infomaniak.png" />
@@ -57,14 +56,13 @@
     <div class="step slide" data-x="1000" data-y="-1500">
         <q style="margin-top: 0px;">
             <h2>Plan</h2>
-            <hr>
-                <ol>
-                    <li>Introduction</li>
-                    <li>Rappel</li>
-                    <li>Mes travaux</li>
-                    <li>Conclusion</li>
-                </ol>
-            </hr>
+            <hr />
+            <ol>
+                <li>Introduction</li>
+                <li>Rappel</li>
+                <li>Mes travaux</li>
+                <li>Conclusion</li>
+            </ol>
         </q>
     </div>
 
@@ -94,25 +92,73 @@
        </div>
     </div>
 
-    <div id="big" class="step" data-x="3500" data-y="2100" data-rotate="180" data-scale="6">
+    <div id="big" class="step" data-x="5000" data-y="5000" data-rotate="180" data-scale="6">
         <p><span class="tiny">Mes</span> <b>MISSIONS</b></p>
     </div>
 
     <div id="tiny" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="0" data-scale="1">
         <p><b>Hébergements</b></p>
+        <img src="img/hebergement.jpg" />
     </div>
 
-    <div id="tiny2" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="90" data-scale="2">
+    <div id="tiny2" class="step" data-x="3825" data-y="2325" data-z="-4000" data-rotate="90" data-scale="2">
         <p>
             <b>Webmail2</b> :
-                <span class="scaling1">Mail</span>
-                <span class="scaling2">Contact</span>
-                <span class="scaling3">Agenda</span>
-            </ul>
+            <span class="scaling1">Mail</span>
+            <span class="scaling2">Contact</span>
+            <span class="scaling3">Agenda</span>
         </p>
     </div>
 
-    <div id="tiny3" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="180" data-scale="3">
+    <div class="topFace step cube past" data-x="0" data-y="-125" data-z="-1005" data-rotate-x="60" data-rotate-y="0" data-rotate-z="45" data-scale="0.5" id="cube-3" style="position: absolute; -webkit-transform: translate(-50%, -50%) translate3d(0px, -125px, -1005px) rotateX(60deg) rotateY(0deg) rotateZ(45deg) scale(0.5); -webkit-transform-style: preserve-3d; ">
+            <h1>Mail</h1>
+            <center>
+                <img src="img/mail.png" />
+            </center>
+    </div>
+    <div class="leftFace step cube past" data-x="-125" data-y="90" data-z="-985" data-rotate-x="-30" data-rotate-y="-45" data-rotate-z="0" data-scale="0.5" id="cube-4" style="position: absolute; -webkit-transform: translate(-50%, -50%) translate3d(-125px, 90px, -985px) rotateX(-30deg) rotateY(-45deg) rotateZ(0deg) scale(0.5); -webkit-transform-style: preserve-3d; ">
+            <h1>Contact</h1>
+            <center>
+                <img src="img/contact.png" />
+            </center>
+    </div>
+    <div class="rightFace step cube past" data-x="125" data-y="90" data-z="-985" data-rotate-x="-30" data-rotate-y="45" data-rotate-z="0" data-scale="0.5" id="cube-5" style="position: absolute; -webkit-transform: translate(-50%, -50%) translate3d(125px, 90px, -985px) rotateX(-30deg) rotateY(45deg) rotateZ(0deg) scale(0.5); -webkit-transform-style: preserve-3d; ">
+            <h1>Agenda</h1>
+            <center>
+                <img src="img/agenda.png" />
+            </center>
+    </div>
+    <!-- <div class="backRightFace step cube past" data-x="125" data-y="-35" data-z="-1200" data-rotate-x="-30" data-rotate-y="135" data-rotate-z="0" data-scale="0.5" id="cube-6" style="position: absolute; -webkit-transform: translate(-50%, -50%) translate3d(125px, -35px, -1200px) rotateX(-30deg) rotateY(135deg) rotateZ(0deg) scale(0.5); -webkit-transform-style: preserve-3d; ">
+        <h1>Pros</h1>
+        <ul>
+            <li>Javascript</li>
+            <li>Non-blocking</li>
+            <li>Reuse JS code</li>
+            <li>Strong community and modules!</li>
+            <li>People will think you're a l33t hacker</li>
+        </ul>
+    </div>
+    <div class="backLeftFace step cube past" data-x="-125" data-y="-35" data-z="-1200" data-rotate-x="-30" data-rotate-y="225" data-rotate-z="0" data-scale="0.5" id="cube-7" style="position: absolute; -webkit-transform: translate(-50%, -50%) translate3d(-125px, -35px, -1200px) rotateX(-30deg) rotateY(225deg) rotateZ(0deg) scale(0.5); -webkit-transform-style: preserve-3d; ">
+        <h1>Cons</h1>
+        <ul>
+            <li>Javascript</li>
+            <li>CPU intensive tasks</li>
+            <li>Event-driven learning curve</li>
+            <li>People will think you're a hipster</li>
+        </ul>
+    </div>
+    <div class="bottomFace step cube past" data-x="0" data-y="180" data-z="-1180" data-rotate-x="60" data-rotate-y="180" data-rotate-z="45" data-scale="0.5" id="cube-8" style="position: absolute; -webkit-transform: translate(-50%, -50%) translate3d(0px, 180px, -1180px) rotateX(60deg) rotateY(180deg) rotateZ(45deg) scale(0.5); -webkit-transform-style: preserve-3d; ">
+        <h1>Resources</h1>
+        <ul>
+            <li><a href="http://howtonode.org/introduction-to-npm">Introduction to NPM</a></li>
+            <li><a href="http://expressjs.com">Express.js web framework</a></li>
+            <li><a href="https://devcenter.heroku.com/articles/nodejs">Free node hosting on Heroku</a></li>
+            <li>Slides at introtonode.herokuapp.com</li>
+            <li>Follow me at @le_isms</li>
+        </ul>
+    </div> -->
+
+    <div id="tiny3" class="step" data-x="4825" data-y="2325" data-z="-5000" data-rotate="180" data-scale="3">
         <p>
             <b>Objets JS</b> :
             <ul>
@@ -147,10 +193,12 @@
     </div>
 
     <div id="source" class="step" data-x="6300" data-y="2000" data-rotate="20" data-scale="4">
-        <p>Avez-vous des <b>questions</b> ?</p>
+        <h1>Thanks!</h1>
         <center>
+            <p>Avez-vous des <b>questions</b> ?</p>
             <img title="Pas trop le 'tourni' ?" src="img/question.png" />
         </center>
+        <p class="note">Presentation créée en 4 heures avec Impress.JS</p>
     </div>
 
     <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
@@ -163,7 +211,7 @@
     <p>Utiliser la barre d'espace ou les flèches pour naviguer</p>
 </div>
 <script>
-if ("ontouchstart" in document.documentElement) { 
+if ("ontouchstart" in document.documentElement) {
     document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
 }
 </script>
