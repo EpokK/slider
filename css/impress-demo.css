@@ -538,6 +538,8 @@ a:focus {
     font-family: 'Exo', sans-serif;
     color: #BBB;
     line-height: 130px;
+    color: transparent;
+    text-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 #source p.note {
