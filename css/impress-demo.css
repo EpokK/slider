@@ -360,14 +360,14 @@ a:focus {
     width: 100%;
 }
 
-#big {
+#missions {
     width: 600px;
     text-align: center;
     font-size: 60px;
     line-height: 1;
 }
 
-#big b {
+#missions b {
     display: block;
     border-color: red;
     color: red;
@@ -388,11 +388,11 @@ a:focus {
 
 }
 
-#big .tiny {
+#missions .tiny {
     font-size: 35px;
 }
 
-#big .thoughts {
+#missions .thoughts {
     font-size: 90px;
     line-height: 150px;
 }
