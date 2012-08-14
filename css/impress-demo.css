@@ -273,15 +273,6 @@ a:focus {
     opacity: 0.2;
 }
 
-#bored {
-    height: auto;
-    background-color: black;
-}
-
-#bored img {
-    width: 100%;
-}
-
 #title {
     padding: 0;
 }
@@ -410,13 +401,73 @@ a:focus {
     text-shadow: 2px 2px 2px black;
 }
 
-#tiny3 ul li {
-    font-family: 'Open Sans', sans-serif;
+#tiny3 {
+    width: 1200px;
+    font-family: Arial, sans-serif;
+}
+
+#tiny3 ul {
+    list-style: circle;
+}
+
+#tiny3 li {
+    font-style: italic;
     line-height: 0.9;
-    color: #333;
-    font-size: 110px;
-    font-weight: bold;
-    text-shadow: -5px -5px 1px #999;
+    font-size: 50px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#tiny3 img {
+    width: 300px;
+}
+
+#tiny3 div.post-it {
+    margin: 15px;
+    border: 2px solid #E5D387;
+    background: #FFFCD8;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    position: relative;
+    zoom: 1;
+    -webkit-border-bottom-right-radius: 150px 25px;
+    -moz-border-radius-bottomright: 150px 25px;
+    border-bottom-right-radius: 150px 25px;
+    box-shadow: 4px 3px 10px #666;
+}
+
+#tiny3 div.content {
+    padding: 8px 80px 8px;
+    overflow: hidden;
+    position: relative;
+    -moz-transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
+    -o-transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+}
+
+#tiny3 div.cadre {
+    display: inline-block;
+    padding: 10px 10px 5px 10px;
+    background-color: white;
+    margin: 10px;
+    border: 2px solid #BBB;
+    box-shadow: 4px 3px 10px #666;
+    -o-transition-property: all;
+    -o-transition-duration: 1s;
+    -o-transition-timing-function: ease-in-out;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    -moz-transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
+    -o-transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    transform: rotate(-5deg);
 }
 
 #ing { width: 800px }
