@@ -196,13 +196,16 @@ a:focus {
     border: 1px solid rgba(0, 0, 0, .3);
     box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
 
-    color: rgb(102, 102, 102);
     text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
 
     font-family: 'Open Sans', Arial, sans-serif;
     font-size: 30px;
-    line-height: 36px;
-    letter-spacing: -1px;
+
+    line-height: 1.4;
+    letter-spacing: -3px;
+    color: #515151;
+
+    border-radius: 5px;
 }
 
 .slide q {
@@ -222,6 +225,7 @@ a:focus {
 .slide q h2 {
     font-size: 65px;
     color: #02538A;
+    letter-spacing: -2px;
 }
 
 .slide q i {
@@ -231,10 +235,19 @@ a:focus {
     line-height: 50px;
 }
 
-.slide q i.moi {
-    font-weight: bold;
-    font-size: 50px;
-    color: #BBB;
+.slide q .sous {
+    font-size: 34px;
+    color: #797979;
+    font-weight: inherit;
+    letter-spacing: -2px;
+    line-height: 45px;
+    text-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.1),inset 0 -1px 0 rgba(0, 0, 0, 0.07);
+}
+
+.slide q .moi {
+    font-size: 35px;
+    color: #797979;
+    line-height: 1.3;
 }
 
 .slide q i.impress {
@@ -385,7 +398,8 @@ a:focus {
 }
 
 #hebergement {
-    width: 500px;
+    width: 900px;
+    height: 900px;
 }
 
 #hebergement span {
@@ -394,23 +408,64 @@ a:focus {
     box-shadow: inset 0 0 2px rgba(0, 0, 0, .7), inset 0 2px 0 rgba(255, 255, 255, .3), inset 0 -1px 0 rgba(0, 0, 0, .5), 0 1px 3px rgba(0, 0, 0, .4);
 }
 
-#hebergement img {
-    left: 25%;
-    position: absolute;
+#hebergement h1 {
+    text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
+
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 90px;
+
+    line-height: 1.4;
+    letter-spacing: -3px;
+    color: #515151;
 }
 
-#hebergement span::after {
-    position: absolute;
-    content: ' ';
-    width: 60px;
-    height: 25px;
-    top: 100px;
-    left: 50%;
-    margin-left: -30px;
-    border: solid 1px rgba(137, 130, 48, .2);
-    background-color: rgba(254, 243, 127, .6);
-    background: -moz-linear-gradient(top, rgba(254, 243, 127, .6) 0%, rgba(240, 224, 54, .6) 100%);
-    -webkit-box-shadow: inset 0 1px 0 rgba(254, 243, 127, .6), 0 1px 0 rgba(0, 0, 0, .2);
+@keyframes scroll {
+    0%, 20%, 100%   { left: 0 }
+    25%, 45%        { left: -100% }
+    50%, 70%        { left: -200% }
+    75%, 95%        { left: -300% }
+}
+
+@-webkit-keyframes moveSlideshow {
+    0%   {
+        -webkit-transform: translateY(0);
+    }
+    100% {
+        -webkit-transform: translateY(-100%);
+    }
+}
+
+@-moz-keyframes moveSlideshow {
+    0%   {
+        -moz-transform:    translateY(0);
+    }
+    100% {
+        -moz-transform:    translateY(-100%);
+    }
+}
+
+#hebergement .main {
+    height: 300px;
+    overflow: hidden;
+}
+
+#hebergement .scroll {
+    /* Hey browser, use your GPU */
+   -webkit-transform: translate3d(0, 0, 0);
+
+    -moz-transition:  opacity 0.5s ease-out;
+    -o-transition: opacity 0.5s ease-out;
+    -webkit-transition: opacity 0.5s ease-out;
+    -ms-transition: opacity 0.5s ease-out;
+
+    /* Slow */
+    -webkit-animation: moveSlideshow 60s linear infinite;
+    -moz-animation:    moveSlideshow 60s linear infinite;
+}
+
+#hebergement .scroll img {
+    -webkit-animation-duration: 5s;
+    -moz-animation-duration:    5s;
 }
 
 #webmail2 span {
@@ -495,6 +550,36 @@ a:focus {
     font-size: 140px;
     line-height: 100px;
     font-family: 'Open Sans', sans-serif;
+}
+
+#conclusion .browser-support {
+    width: 900px;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -ms-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-box-align: center;
+    box-align: center;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-box-pack: center;
+    box-pack: center;
+    height: 100%;
+}
+
+#conclusion .browser-support img {
+    opacity: 1;
+    -webkit-filter: grayscale(0);
+    z-index: 1;
+    position: relative;
+    -webkit-mask-image: -webkit-linear-gradient(bottom, rgba(255,255,255,0), rgba(255,255,255,0) 45%, #fff 65%);
+    -moz-mask-image: -moz-linear-gradient(bottom, rgba(255,255,255,0), rgba(255,255,255,0) 45%, #fff 65%);
+    -ms-mask-image: -ms-linear-gradient(bottom, rgba(255,255,255,0), rgba(255,255,255,0) 45%, #fff 65%);
+    -o-mask-image: -o-linear-gradient(bottom, rgba(255,255,255,0), rgba(255,255,255,0) 45%, #fff 65%);
+    height: 225px;
+    margin-right: -70px;
 }
 
 #conclusion p {
