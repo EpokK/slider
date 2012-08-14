@@ -273,11 +273,19 @@ a:focus {
     opacity: 0.2;
 }
 
-#title {
+#introduction {
     padding: 0;
+    width: 500px;
 }
 
-#title .try {
+#introduction .acco {
+    font-size: 280px;
+    line-height: 60px;
+    color: #999;
+    text-shadow: 2px 1px 1px #FFF;
+}
+
+#introduction .mon {
     font-size: 60px;
     position: absolute;
     top: -0.7em;
@@ -290,7 +298,7 @@ a:focus {
     transform:         translateZ(20px);
 }
 
-#title h1 {
+#introduction h1 {
     font-size: 190px;
     line-height: 1em;
 
@@ -301,7 +309,7 @@ a:focus {
     transform:         translateZ(50px);
 }
 
-#title .duction {
+#introduction .duction {
     font-size: 80px;
     font-weight: bold;
     font-family: "Georgia";
@@ -487,6 +495,15 @@ a:focus {
     font-family: 'Open Sans', sans-serif;
 }
 
+#conclusion .acco {
+    font-size: 280px;
+    line-height: 60px;
+    vertical-align: middle;
+    top: 80px;
+    position: absolute;
+    color: #999;
+    text-shadow: 2px 1px 1px #FFF;
+}
 
 #conclusion b, #merci b {
     display: inline-block;
