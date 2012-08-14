@@ -697,86 +697,19 @@ a:focus {
     font-size: 60px;
 }
 
-#its-in-3d p {
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style:    preserve-3d; /* Y U need this Firefox?! */
-    -ms-transform-style:     preserve-3d;
-    -o-transform-style:      preserve-3d;
-    transform-style:         preserve-3d;
-}
-#its-in-3d span,
-#its-in-3d b {
-    display: inline-block;
-    -webkit-transform: translateZ(40px);
-    -moz-transform:    translateZ(40px);
-    -ms-transform:     translateZ(40px);
-    -o-transform:      translateZ(40px);
-     transform:        translateZ(40px);
-
-    -webkit-transition: 0.5s;
-    -moz-transition:    0.5s;
-    -ms-transition:     0.5s;
-    -o-transition:      0.5s;
-    transition:         0.5s;
+#questions div.content {
+    width: 1000px;
+    height: 1000px;
+    border-width: 20px;
+    border-color: #02538A;
+    border-style: dotted;
+    border-radius: 500px;
 }
 
-#its-in-3d .have {
-    -webkit-transform: translateZ(-40px);
-    -moz-transform:    translateZ(-40px);
-    -ms-transform:     translateZ(-40px);
-    -o-transform:      translateZ(-40px);
-    transform:         translateZ(-40px);
-}
-
-#its-in-3d .you {
-    -webkit-transform: translateZ(20px);
-    -moz-transform:    translateZ(20px);
-    -ms-transform:     translateZ(20px);
-    -o-transform:      translateZ(20px);
-    transform:         translateZ(20px);
-}
-
-#its-in-3d .noticed {
-    -webkit-transform: translateZ(-40px);
-    -moz-transform:    translateZ(-40px);
-    -ms-transform:     translateZ(-40px);
-    -o-transform:      translateZ(-40px);
-    transform:         translateZ(-40px);
-}
-
-#its-in-3d .its {
-    -webkit-transform: translateZ(60px);
-    -moz-transform:    translateZ(60px);
-    -ms-transform:     translateZ(60px);
-    -o-transform:      translateZ(60px);
-    transform:         translateZ(60px);
-}
-
-#its-in-3d .in {
-    -webkit-transform: translateZ(-10px);
-    -moz-transform:    translateZ(-10px);
-    -ms-transform:     translateZ(-10px);
-    -o-transform:      translateZ(-10px);
-    transform:         translateZ(-10px);
-}
-
-#its-in-3d .footnote {
-    font-size: 32px;
-
-    -webkit-transform: translateZ(-10px);
-    -moz-transform:    translateZ(-10px);
-    -ms-transform:     translateZ(-10px);
-    -o-transform:      translateZ(-10px);
-    transform:         translateZ(-10px);
-}
-
-#its-in-3d.present span,
-#its-in-3d.present b {
-    -webkit-transform: translateZ(0px);
-    -moz-transform:    translateZ(0px);
-    -ms-transform:     translateZ(0px);
-    -o-transform:      translateZ(0px);
-    transform:         translateZ(0px);
+#questions div.content div {
+    position: absolute;
+    top: 25%;
+    left: 25%;
 }
 
 #overview { display: none }
