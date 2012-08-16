@@ -45,7 +45,9 @@ table {
 }
 
 body {
-    font-family: 'PT Sans', sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 200;
+    color: #515151;
     min-height: 740px;
     background: white url(../img/noise_lines.png) repeat center center;
 }
@@ -98,13 +100,11 @@ a:focus {
 .cube {
     width: 700px;
     height: 700px;
-    font-family: 'Pontano Sans', helvetica, sans-serif;
     line-height: 1.5;
     padding: 40px;
 }
 
 .cube h1 {
-    color: #02538A;
     font-weight: bold;
 }
 
@@ -161,7 +161,6 @@ a:focus {
     -o-box-sizing:      border-box;
     box-sizing:         border-box;
 
-    font-family: 'PT Serif', georgia, serif;
     font-size: 48px;
     line-height: 1.5;
 }
@@ -180,9 +179,13 @@ a:focus {
 .impress-enabled .step.active { opacity: 1 }
 
 .page {
-    font-size: 20px;
+    font-size: 80px;
+    line-height: 63px;
+    padding-right: 15px;
+    font-family: "FranklinGothicStdExtraCondens",Arial,Helvetica,sans-serif;
     text-align: right;
     color: #AAA;
+    border-right: 4px solid #AAA;
 }
 
 .slide {
@@ -198,12 +201,10 @@ a:focus {
 
     text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
 
-    font-family: 'Open Sans', Arial, sans-serif;
     font-size: 30px;
 
     line-height: 1.4;
     letter-spacing: -3px;
-    color: #515151;
 
     border-radius: 5px;
 }
@@ -224,7 +225,6 @@ a:focus {
 }
 .slide q h2 {
     font-size: 65px;
-    color: #02538A;
     letter-spacing: -2px;
 }
 
@@ -276,7 +276,6 @@ a:focus {
     margin-left: 100px;
     font-size: 100px;
     line-height: 110px;
-    font-family: "Arial";
 }
 
 .slide img.univ {
@@ -293,7 +292,6 @@ a:focus {
 #introduction .acco {
     font-size: 280px;
     line-height: 60px;
-    color: #999;
     text-shadow: 2px 1px 1px #FFF;
 }
 
@@ -301,7 +299,6 @@ a:focus {
     font-size: 60px;
     position: absolute;
     top: -0.7em;
-    color: #666;
 
     -webkit-transform: translateZ(20px);
     -moz-transform:    translateZ(20px);
@@ -313,7 +310,7 @@ a:focus {
 #introduction h1 {
     font-size: 190px;
     line-height: 1em;
-
+    color: black;
     -webkit-transform: translateZ(50px);
     -moz-transform:    translateZ(50px);
     -ms-transform:     translateZ(50px);
@@ -324,8 +321,6 @@ a:focus {
 #introduction .duction {
     font-size: 80px;
     font-weight: bold;
-    font-family: "Georgia";
-    color: #666;
     top: 1.8em;
     position: absolute;
 }
@@ -369,14 +364,13 @@ a:focus {
 
 #missions b {
     display: block;
-    border-color: red;
-    color: red;
+    border-color: #940000;
+    color: #940000;
     border-radius: 10px;
     border-width: 5px;
     border-style: solid;
     font-size: 100px;
     line-height: 150px;
-    font-family: "Courier New";
     box-shadow: 5px 5px 2px #999999;
     text-shadow: 5px 5px 2px #999999;
     filter: dropshadow(color=#999999, offx=5, offy=5);
@@ -411,12 +405,10 @@ a:focus {
 #hebergement h1 {
     text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
 
-    font-family: 'Open Sans', Arial, sans-serif;
     font-size: 90px;
 
     line-height: 1.4;
     letter-spacing: -3px;
-    color: #515151;
 }
 
 @keyframes scroll {
@@ -470,14 +462,12 @@ a:focus {
 
 #webmail2 span {
     font-size: 200px;
-    font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     text-shadow: 2px 1px 1px #FFF;
 }
 
 #objets {
     width: 1200px;
-    font-family: Arial, sans-serif;
 }
 
 #objets ul {
@@ -549,7 +539,6 @@ a:focus {
 #conclusion h1 {
     font-size: 140px;
     line-height: 100px;
-    font-family: 'Open Sans', sans-serif;
 }
 
 #conclusion .browser-support {
@@ -582,13 +571,8 @@ a:focus {
     margin-right: -70px;
 }
 
-#conclusion p {
-    color: #888;
-}
-
 #conclusion b {
     color: black;
-    font-family: 'Open Sans', sans-serif;
 }
 
 #conclusion .acco {
@@ -597,7 +581,6 @@ a:focus {
     vertical-align: middle;
     top: 80px;
     position: absolute;
-    color: #999;
     text-shadow: 2px 1px 1px #FFF;
 }
 
@@ -681,8 +664,6 @@ a:focus {
 #source h1 {
     font-size: 5em;
     font-weight: 700;
-    font-family: 'Exo', sans-serif;
-    color: #BBB;
     line-height: 130px;
     color: transparent;
     text-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -690,7 +671,6 @@ a:focus {
 
 #source p.note {
     font-size: .5em;
-    color: #666;
 }
 
 #source q {
